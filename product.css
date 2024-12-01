@@ -99,13 +99,12 @@ h1 {
     min-width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; /* Center content */
-    align-items: center; /* Center vertically */
-}
+    justify-content: center; 
+    align-items: center;
 
 .slide img {
-    width: 100%; /* Responsive image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .prev, .next {
@@ -151,21 +150,19 @@ h1 {
     background-color: black;
 }
 
-/* Advertisement Styles */
 .advertise {
     display: flex;
     justify-content: space-evenly;
     padding: 10px 20px;
-    flex-wrap: wrap; /* Allows wrapping of ads */
+    flex-wrap: wrap; 
 }
 
 .ad img {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%; 
     height: auto;
 }
 
-/* Featured Products Styles */
-/* Featured Products Styles */
+
 .featured {
     width: 100%;
     height: 50px;
@@ -179,33 +176,31 @@ h1 {
     height: 6vh;
 }
 
-/* Featured Products Styles */
 .products {
     display: flex;
     justify-content: space-evenly;
     padding: 10px 20px;
-    flex-wrap: wrap; /* Allows wrapping of products */
+    flex-wrap: wrap; 
 }
 
 .pod {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
-    margin: 10px; /* Adds space between products */
-    width: 220px; /* Set a fixed width for product boxes */
+    align-items: center; 
+    margin: 10px; 
+    width: 220px; 
 }
 
 .pod img {
     width: 100%;
-    height: 200px; /* Set a fixed height for uniformity */
-    object-fit: contain; /* Ensures the full image is visible without cropping */
+    height: 200px; 
+    object-fit: contain; 
 }
 .pod h5{
     font-size: 1em;
 }
 
 
-/* Bounce Animation */
 .bounce {
     font-size: 2em;
     font-weight: bold;
@@ -225,35 +220,34 @@ h1 {
     }
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to start */
+        flex-direction: column;
+        align-items: flex-start; 
     }
     .search-bar {
-        margin: 10px 0; /* Add margin for better spacing */
+        margin: 10px 0; 
     }
     .categories, .products {
-        flex-direction: column; /* Stack categories/products vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
     .category, .pod {
-        flex: 1 1 90%; /* Adjust flex basis for smaller screens */
+        flex: 1 1 90%; 
     }
 }
 
 @media (max-width: 480px) {
     .main-banner {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
     .bounce {
-        font-size: 24px; /* Smaller text size */
+        font-size: 24px; 
     }
     .header h1 {
-        font-size: 20px; /* Adjust header size */
+        font-size: 20px; 
     }
     .slider-container {
-        height: 200px; /* Adjust slider height for smaller screens */
+        height: 200px; 
     }
 }
