@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Electro Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+        }
+        .product img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Products</h1>
+
+    <div class="products-container">
+        <div class="product" data-name="iphone 6 pro max">
+            <img src="assets/OIP (1).jpg" alt="iPhone 6 Pro Max">
+            <h5>iPhone 6 Pro Max</h5>
+        </div>
+        <div class="product" data-name="samsung galaxy s21">
+            <img src="assets/OIP (2).jpg" alt="Samsung Galaxy S21">
+            <h5>Samsung Galaxy S21</h5>
+        </div>
+        <div class="product" data-name="sony headphones">
+            <img src="assets/OIP (3).jpg" alt="Sony Headphones">
+            <h5>Sony Headphones</h5>
+        </div>
+        <div class="product" data-name="macbook pro">
+            <img src="assets/OIP (4).jpg" alt="MacBook Pro">
+            <h5>MacBook Pro</h5>
+        </div>
+        <div class="product" data-name="apple watch">
+            <img src="assets/OIP (5).jpg" alt="Apple Watch">
+            <h5>Apple Watch</h5>
+        </div>
+        <div class="product" data-name="dell xps 13">
+            <img src="assets/OIP (6).jpg" alt="Dell XPS 13">
+            <h5>Dell XPS 13</h5>
+        </div>
+    </div>
+   
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('search') ? urlParams.get('search').toLowerCase() : '';
+
+        if (searchQuery) {
+            const products = document.querySelectorAll('.product');
+            
+            products.forEach(product => {
+                const productName = product.dataset.name;
+
+                if (!productName.includes(searchQuery)) {
+                    product.style.display = 'none';
+                    
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+3

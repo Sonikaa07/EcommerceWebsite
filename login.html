@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="slidestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Jost', sans-serif;
+            background-image: url("assets/wp3269174.jpg");
+        
+        }
+
+        .main {
+            width: 500px;
+            height: 570px;
+            background-color: rgba(210, 211, 210, 0.775);
+            overflow: hidden;
+            border: 1px solid #e0dedeb9;
+            border-radius: 20px;
+            box-shadow: 5px  20px 20px rgb(7, 6, 6);
+        }
+
+        #chk {
+            display: none;
+        }
+
+        .signup {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        label {
+            color: rgb(24, 31, 40);
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        input {
+            width: 60%;
+            height: 20px;
+            background: #e0deded8;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            color: rgb(84, 24, 13);
+            outline: none;
+            border-radius: 60px;
+        }
+
+        button {
+            width: 60%;
+            height: 40px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color: #fff;
+            background-color: rgb(116, 15, 15);
+            font-weight: bold;
+            margin-top: 20px;
+            outline: none;
+            border-radius: 50px;
+            transition: .2s ease-in;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(65, 6, 6);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .login {
+            height: 600px;
+            background-color: rgba(190, 192, 196, 0.988);
+            border-radius: 60% / 10%;
+            transform: translateY(-180px);
+            transition: .8s ease-in-out;
+        }
+
+        .login label {
+            color: rgb(87, 13, 13);
+            padding: 10px;
+            transform: scale(.6);
+        }
+        .login label:hover {
+            color: rgb(53, 10, 10);
+            padding: 10px;
+            transform: scale(.8);
+        }
+        #chk:checked ~ .login {
+            transform: translateY(-580px);
+        }
+
+        #chk:checked ~ .login label {
+            transform: scale(1);
+        }
+
+        #chk:checked ~ .signup label {
+            transform: scale(.6);
+        }
+
+        input::placeholder {
+            color: rgb(21, 48, 83);
+            font-size: 1.2em;
+        }
+
+        .error {
+            text-align: center;
+            color: rgb(131, 10, 10);
+        }
+
+        .success {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            width: 45vw;
+            background-color: #fff;
+            color: rgb(87, 18, 18);
+            margin: 40px;
+            font-size: 1.7em;
+        }
+
+        .success a {
+            background-color: rgb(89, 22, 13);
+            margin: 20px;
+            font-size: 0.95em;
+            padding: 10px;
+            border-radius: 10%;
+        }
+
+        .success span {
+            color: rgb(89, 17, 14);
+        }
+
+        .success img {
+            height: 46vh;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form id="signup-form">
+                <label for="chk" >Sign up</label>
+                <input type="text" name="txt" id="name" placeholder="User name" >
+                <div class="error" id="name-error"></div>
+
+                <input type="email" name="email" id="email" placeholder="Email" >
+                <div class="error" id="email-error"></div>
+
+                <input type="password" name="pswd" id="password" placeholder="Password">
+                <div class="error" id="password-error"></div>
+
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login" id="login">
+            <form id="login-form">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" id="login-email" placeholder="Email" required="">
+                <div class="error" id="login-email-error"></div>
+
+                <input type="password" name="pswd" id="login-password" placeholder="Password" required="">
+                <div class="error" id="login-password-error"></div>
+
+                <button type="submit" class="login_button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="success" id="success-section">
+        <img src="assets/vector-illustration-about-concept-successful-login-account-has-been-registered_675567-6409.jpg" alt="">
+        <h1>Login Successful &nbsp;<span style="height: 30px;">&#9786;</span></h1>
+        <a href="main.html">Close</a>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("name").addEventListener("input", validateSignupName);
+            document.getElementById("email").addEventListener("input", function() {
+                validateEmail("email", "email-error");
+            });
+            document.getElementById("password").addEventListener("input", function() {
+                validatePassword("password", "password-error");
+            });
+            document.getElementById("login-email").addEventListener("input", function() {
+                validateEmail("login-email", "login-email-error");
+            });
+            document.getElementById("login-password").addEventListener("input", function() {
+                validatePassword("login-password", "login-password-error");
+            });
+
+            document.getElementById("signup-form").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                if (validateSignupForm()) {
+                    document.getElementById("chk").checked = true; 
+                }
+            });
+
+            document.querySelector(".login_button").addEventListener("click", function(event) {
+                event.preventDefault();
+                validateLogin();
+            });
+        });
+        function validateSignupForm() {
+            const isNameValid = validateSignupName();
+            const isEmailValid = validateEmail("email", "email-error");
+            const isPasswordValid = validatePassword("password", "password-error");
+            return isNameValid && isEmailValid && isPasswordValid;
+        }
+        function validateSignupName() {
+            const name = document.getElementById("name").value.trim();
+            const patName = /^[A-Za-z\s]+$/;
+            if (name === "") {
+                showError("name-error", "Name is required.");
+                return false;
+            }
+            if (!patName.test(name)) {
+                showError("name-error", "Invalid name! Only letters and spaces are allowed.");
+                return false;
+            }
+            clearError("name-error");
+            return true;
+        }
+        function validateEmail(inputId, errorId) {
+            const email = document.getElementById(inputId).value.trim();
+            const patEmail = /^[^\s@]+@(gmail\.com|[\w-]+\.gmail\.com|gmail\.in|[\w-]+\.gmail\.in)$/;
+            if (email === "") {
+                showError(errorId, "Email is required.");
+                return false;
+            }
+            if (!patEmail.test(email)) {
+                showError(errorId, "Email must end with @gmail.com /.in a subdomain like @anything.gmail.com/.in");
+                return false;
+            }
+            clearError(errorId);
+            return true;
+        }
+        function validatePassword(inputId, errorId) {
+            const password = document.getElementById(inputId).value.trim();
+            const patPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*-+]).{8,}$/;
+            if (password === "") {
+                showError(errorId, "Password is required.");
+                return false;
+            }
+            if (!patPassword.test(password)) {
+                showError(errorId, "Password must be at least 8 characters, include uppercase, lowercase, digit, and special character.");
+                return false;
+            }
+            clearError(errorId);
+            return true;
+        }
+        function validateLogin() {
+            const isEmailValid = validateEmail("login-email", "login-email-error");
+            const isPasswordValid = validatePassword("login-password", "login-password-error");
+
+            if (isEmailValid && isPasswordValid) {
+                showSuccess();
+            }
+        }
+        function showError(id, msg) {
+            document.getElementById(id).innerHTML = msg;
+        }
+
+        function clearError(id) {
+            document.getElementById(id).innerHTML = '';
+        }
+        function showSuccess() {
+            document.querySelector(".main").style.display = "none";
+            document.getElementById("success-section").style.display = "flex";
+        }
+    </script>
+</body>
+</html>

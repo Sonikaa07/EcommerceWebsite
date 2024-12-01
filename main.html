@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="head">
+            <p>
+                Electro Mart
+            </p>
+            <nav class="horizontal-nav">
+
+                <ul class="nav-list">
+                    <li><a href="main.html" accesskey="h">Home <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></a></li>
+                    <li><a href="product.html" accesskey="p" >Products <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></a></li>
+                    <li><a href="about.html" accesskey="a">About us <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></a></li>
+                    <li><a href="login.html" accesskey="l">Login/Signup <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <form id="searchForm" action="mob.html" method="get">
+                <input type="text" name="search" id="searchInput" placeholder="Search products..."
+                    style="border-radius: 10px; width:13vw ;margin: 10px;" required>
+                <button type="submit" style="background-color: #67180a;">
+                    <i class="fas fa-search srch" style="color: white" ;></i>
+                </button>
+            </form>
+
+
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 2h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" />
+                </svg>
+
+            </div>
+        </div>
+    </body>
+
+    <div class="carousel">
+        <div class="carousel-slides img">
+            <img src="assets\a headng (2).png" alt="Slide 1" onclick="location.href='mob.html#headphone'">
+            <img src="assets\watch ad.jpg" onclick="location.href='mob.html#watch'">
+            <img src="assets\a headng (4).png" alt="Slide 3" onclick="location.href='mob.html#phone'">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="prevSlide()" style="background-color: rgba(0, 0, 0, 0.518);">&#10094;</button>
+            <button onclick="nextSlide()" style="background-color: rgba(23, 3, 3, 0.499);">&#10095; </button>
+        </div>
+    </div>
+    <img draggable="false" class="image-image undefined "
+        src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/10/9/2dfa803f-c966-469c-a0ae-eef4a8a0b8db1728455117502-Categories-To-Cart.jpg"
+        srcset="" style="margin: 10px ;width: 98vw;">
+
+    <div class="categories" id="categories">
+
+        <img src="assets\cate.jpg" alt="" onclick="location.href='mob.html#mobile'">
+
+        <img src="assets\cate1.jpg" alt="" onclick="location.href='mob.html#watch'">
+
+        <img src="assets\cate3.jpg" alt="" onclick="location.href='mob.html#fridge'">
+        <img src="assets\cate4.jpg" alt="" onclick="location.href='mob.html#headphone'">
+        <img src="assets\cate5.jpg" alt="" onclick="location.href='mob.html#washing'">
+        <img src="assets\cate(6).jpg" alt="" onclick="location.href='mob.html#tv'">
+
+
+    </div>
+
+
+    </div>
+
+
+    <div class="cust-grid">
+        <div class="grid-container">
+            <div class="cards cust-card">
+                <div class="card">
+                    <img src="assets/OIP (1).jpg" alt="iPhone6">
+                    <h5>Apple iPhone 15 (Blue, 128 GB) </h5>
+                    <p><sup>&#8377; </sup>92000 </p>
+
+
+                    <input type="button" value="View details" onclick="location.href='mob.html#iphone15'">
+                </div>
+                <div class="card">
+                    <img src="assets/OIP (3).jpg" alt="iPhone6">
+                    <h5>SAMSUNG Galaxy F05 (64 GB) </h5>
+                    <p><sup>&#8377; </sup>33,000 </p>
+
+
+
+                    <input type="button" value="View details" onclick="location.href='mob.html#samsung'">
+                </div>
+                <div class="card">
+                    <img src="assets/OIP (4).jpg" alt="iPhone6">
+                    <h5>Nothing Phone 5G( 256 GB)</h5>
+                    <p><sup>&#8377; </sup>55000 </p>
+
+
+                    <input type="button" value="View details" onclick="location.href='mob.html#nothing1'">
+                </div>
+
+            </div>
+            <div class="video-container">
+                <video src="assets/Untitled1 ‑ Made with FlexClip.mp4" autoplay loop muted class="video"
+                    style="width: 100%;"></video>
+            </div>
+
+        </div>
+    </div>
+    <fieldset style="margin: 20px; padding: 10px; 
+">
+        <legend>
+            <h1
+                style="margin: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:  rgba(4, 21, 55, 0.936)">
+                Featured Products</h1>
+        </legend>
+        <div class="grid">
+            <div class="grid-items"><img src="assets\OIP (2).jpg" alt="">
+                <h2>Redmi</h2>
+                <p><sup>&#8377; </sup>16200 </p>
+                <input type="button" value="View details" onclick="location.href='mob.html#redmi13'">
+            </div>
+            <div class="grid-items"><img src="assets\cate1.jpg" alt="">
+                <h3>Apple Watch Series 8 </h3>
+                <p><sup>&#8377; </sup>41900 </p>
+
+                <input type="button" value="View details" onclick="location.href='mob.html#apWa'">
+            </div>
+            <div class="grid-items"><img src="assets\qled.jpg" alt="">
+                <h3> Qled Tv</h3>
+                <p><sup>&#8377; </sup>99999 </p>
+
+                <input type="button" value="View details" onclick="location.href='mob.html#tvvv'">
+            </div>
+            <div class="grid-items"><img src="assets\OIP (1).jpg" alt="">
+                <h2>iPhone15 </h2>
+                <p><sup>&#8377; </sup>92000 </p>
+                   <input type="button" value="View details" onclick="location.href='mob.html#iphone15'">
+            </div>
+            <div class="grid-items"><img src="assets\lg.jpg" alt="">
+                <h2>LG Refrigerator</h2>
+                <p><sup>&#8377; </sup>29,490 </p>
+                <input type="button" value="View details" onclick="location.href='mob.html#fridge'">
+            </div>
+        </div>
+    </fieldset>
+
+    <section class="first third" onclick="location.href='mob.html#tv'">
+        <div>
+            <span> "All screens, no limits—
+            </span>
+            <span> experience brilliance from your monitor<br> to your phone."
+            </span>
+        </div>
+        <div class="sec_img">
+            <img src="assets\tv.png">
+            <video src="assets\Untitled ‑ Made with FlexClip.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+
+
+    <section>
+        <img src="assets\adv.png" alt="" width="600">
+    </section>
+    <section class="fcq" id="faq">
+        <h1>Frequently asked questions</h1>
+
+        <div class="fcqbox1">
+            <div class="question">
+                <span>What is the payment policy of ElectroMart?</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" onclick="toggle(this)">
+                    <path d="M12 4V20M20 12H4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h5 class="ans">ElectroMart only accepts cash on delivery</h5>
+        </div>
+        <div class="fcqbox1">
+            <div class="question">
+                <span>How long does shipping take?</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" onclick="toggle(this)">
+                    <path d="M12 4V20M20 12H4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h5 class="ans">Standard shipping typically takes 3-7 business days, depending on your location. Expedited
+                shipping options are also available for faster delivery.
+            </h5>
+        </div>
+        <div class="fcqbox1">
+            <div class="question">
+                <span>What is the return policy</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" onclick="toggle(this)">
+                    <path d="M12 4V20M20 12H4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h5 class="ans">Electromart offers a 30-day return policy. If you are not satisfied with your purchase, you
+                can return it within 30 days of receipt for a full refund or exchange. Please ensure the product is in
+                its original condition and packaging.</h5>
+        </div>
+        <div class="fcqbox1">
+            <div class="question">
+                <span>How can I contact customer support?</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" onclick="toggle(this)">
+                    <path d="M12 4V20M20 12H4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h5 class="ans">You can reach our customer support team via email at support@electromart.com or by calling
+                our hotline at +91 974532786. Our support hours are Monday to Friday, 9 AM to 6 PM.</h5>
+        </div>
+        <div class="fcqbox1">
+            <div class="question">
+                <span>What should I do if I receive a damaged or defective item?
+
+                </span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" onclick="toggle(this)">
+                    <path d="M12 4V20M20 12H4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h5 class="ans">If you receive a damaged or defective item, please contact our customer support within 48
+                hours of delivery. We will assist you in arranging a return or exchange.</h5>
+        </div>
+    </section>
+    <section>
+        <img src="assets\adv.png" alt="" width="600">
+    </section>
+    
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="main.html#categories" class="text-white">Shop by Category</a></li>
+
+                        <li><a href="mob.html#mobile" class="text-white">Mobile Phones</a></li>
+                        <li><a href="mob.html#headphone" class="text-white">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="main.html#faq" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white"> </a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+
+                    <br><br>
+                    <p>+91 9745327860</p>
+                    <p>electromart@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <h5>We Accept</h5>
+                    <p>Cash on delivery &#x1F4B5</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center py-3 mt-4" style="background-color: #111;">
+            <p class="mb-0">© 2024 ElectroMart Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slides img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+
+        setInterval(nextSlide, 2000);
+
+
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        mobileMenu.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+
+
+        function toggle(icon) {
+
+            const answer = icon.closest('.fcqbox1').querySelector('.ans');
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>3

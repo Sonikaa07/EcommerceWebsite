@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.header {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.header img {
+    max-width: 38px;
+    max-height: 42px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.main-banner {
+    background-color: #cc2020;
+    padding: 20px;
+    text-align: center;
+    color: #cac7cc;
+}
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #e7f4f5;
+    flex-wrap: wrap; }
+
+.category {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 150px; 
+    margin: 10px; 
+}
+
+.category img {
+    max-width: 80px;
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+    height: 400px; 
+    overflow: hidden; 
+    margin: 20px auto; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center vertically */
+}
+
+.slide img {
+    width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+/* Advertisement Styles */
+.advertise {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allows wrapping of ads */
+}
+
+.ad img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Featured Products Styles */
+/* Featured Products Styles */
+.featured {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    padding: 20px;
+    background-color: #cc0909e1;
+    color: white;
+    height: 6vh;
+}
+
+/* Featured Products Styles */
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allows wrapping of products */
+}
+
+.pod {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    margin: 10px; /* Adds space between products */
+    width: 220px; /* Set a fixed width for product boxes */
+}
+
+.pod img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+}
+.pod h5{
+    font-size: 1em;
+}
+
+
+/* Bounce Animation */
+.bounce {
+    font-size: 2em;
+    font-weight: bold;
+    animation: bounce 1s infinite;
+    margin: 0;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-25px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+    .search-bar {
+        margin: 10px 0; /* Add margin for better spacing */
+    }
+    .categories, .products {
+        flex-direction: column; /* Stack categories/products vertically */
+        align-items: center; /* Center items */
+    }
+    .category, .pod {
+        flex: 1 1 90%; /* Adjust flex basis for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-banner {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .bounce {
+        font-size: 24px; /* Smaller text size */
+    }
+    .header h1 {
+        font-size: 20px; /* Adjust header size */
+    }
+    .slider-container {
+        height: 200px; /* Adjust slider height for smaller screens */
+    }
+}

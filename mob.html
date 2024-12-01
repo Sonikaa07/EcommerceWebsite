@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="mob.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <p
+            style="color:#67180a; font-family:Georgia, 'Times New Roman', Times, serif; font-weight: 700; font-size: 3em; margin-left:20px;">
+            Electro Mart
+        </p>
+        <nav class="horizontal-nav">
+            <div class="menu-toggle" id="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 2h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" />
+                </svg>
+
+            </div>
+            <ul class="nav-list">
+                <li><a href="main.html" accesskey="h">Home <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a></li>
+                <li><a href="product.html" accesskey="p">Products <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a></li>
+                <li><a href="about.html" accesskey="q">About us <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a></li>
+                <li><a href="login.html" accesskey="l">Login/Signup <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <div class="icon-cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 18 20" accesskey="c">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+            </svg>
+            <span class="quantity">0</span>
+        </div>
+    </div>
+    <header>
+        <p>MOBILES</p>
+    </header>
+
+    </div>
+    <div class="mobcat" id="mobile" data-name="Nothing phone" id="nothing1">
+        <div class="mob">
+            <div class="mimg">
+                <img alt="mobile1"
+                    src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_137706907?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402">
+            </div>
+            <div class="mdet">
+                <div class="mname">Nothing Phone (2a) 5G (Black, 256 GB) <br> ₹55,500</div>
+                <ul>
+                    <li>8 GB RAM | 256 GB ROM</li>
+                    <li>17.02 cm (6.7 inch) Full HD+ Display</li>
+                    <li>50MP (OIS) + 50MP | 32MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Dimensity 7200 Pro Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(1)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob"  data-name="realme narzo phone">
+            <div class="mimg">
+                <img alt="mobile2" src="https://m.media-amazon.com/images/I/71r0Ysx+oVL._SX679_.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">realme NARZO N61 (Voyage Blue, 6GB RAM+128GB Storage) <br> ₹21,820</div>
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM</li>
+                    <li>17.02 cm (6.7 inch) Full HD+ Display</li>
+                    <li>50MP (OIS) + 50MP | 32MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Dimensity 7200 Pro Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(2)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="Apple iphone 15 phone"  id="iphone15"> 
+            <div class="mimg">
+                <img alt="mobile3"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Apple iPhone 15 (Blue, 128 GB) <br> ₹92,000</div>
+                <ul>
+                    <li>128 GB ROM</li>
+                    <li>15.49 cm (6.1inch) Super Retina XDR Display</li>
+                    <li>48MP + 12MP | 12MP Front Camera</li>
+                    <li>A16 Bionic Chip, 6 Core Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(3)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="Motorola g85 phone">
+            <div class="mimg">
+                <img alt="mobile4"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/b/y/g/-original-imah4qtgjtzprg3g.jpeg?q=70">
+            </div>
+            <div class="mdet">
+                <div class="mname">Motorola G85 5G (Viva Magenta, 128 GB) <br> ₹42,199</div>
+                <ul>
+                    <li>8 GB RAM | 128 GB ROM</li>
+                    <li>16.94 cm (6.67 inch) Full HD+ Display</li>
+                    <li>50MP + 8MP | 32MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>6s Gen 3 Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(4)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="redmi 13c phone" id="redmi13">
+            <div class="mimg">
+                <img alt="mobile5"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/v/e/a/-original-imahfk4xuk7ntphs.jpeg?q=70"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">REDMI 13C (Stardust Black, 128 GB) <br> ₹12,600</div>
+                <ul>
+                    <li>4 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.12 cm (6.74 inch) HD+ Display</li>
+                    <li>50MP Rear Camera | 8MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Helio G85 Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(5)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob"  data-name="Samsung phone " id="samsung">
+            <div class="mimg">
+                <img alt="mobile6"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/r/f/-original-imah56hkgehywn5b.jpeg?q=70"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">SAMSUNG Galaxy F05 (Twilight Blue, 64 GB) <br> ₹33,000</div>
+                <ul>
+                    <li>4 GB RAM | 64 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.12 cm (6.74 inch) HD+ Display</li>
+                    <li>50MP + 2MP | 5MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Exynos 1330 Processor</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(6)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <p>Washing Machine</p>
+    </header>
+
+
+
+    <!-- Product Section -->
+    <div class="mobcat" id="washing" data-name=" Smart Washing machine">
+        <div class="mob">
+            <div class="mimg">
+                <img alt="washingmachine1"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/2/b/h/-original-imagx7qh8qzppe3s.jpeg?q=70"
+                    style="width: 60%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Smart Washing Machine (7 kg, Front Load)</div>
+                <br>
+                <ul>
+                    <li>7 kg Capacity</li>
+                    <li>Front Load Design</li>
+                    <li>15 Wash Programs</li>
+                    <li>Energy Efficient</li>
+                    <li>Child Lock Feature</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(7)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="Automatic washing machine">
+            <div class="mimg">
+                <img alt="washingmachine2"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/r/l/p/-original-imah3cw6nzunnedd.jpeg?q=70"
+                    style="width: 60%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Automatic Washing Machine (8 kg, Top Load)</div>
+                <br>
+                <ul>
+                    <li>8 kg Capacity</li>
+                    <li>Top Load Design</li>
+                    <li>10 Wash Programs</li>
+                    <li>Delay Start Option</li>
+                    <li>Water-Saving Feature</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(8)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="high efficiency washing machine" id="highwash">
+            <div class="mimg">
+                <img alt="washingmachine3"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/r/k/6/-original-imahfeswzjhsfzbn.jpeg?q=70"
+                    style="width: 60%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">High-Efficiency Washing Machine (6 kg, Front Load)</div>
+                <br>
+                <ul>
+                    <li>6 kg Capacity</li>
+                    <li>Front Load Design</li>
+                    <li>12 Wash Programs</li>
+                    <li>Quick Wash Option</li>
+                    <li>Energy Star Rated</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(9)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="compact washing machine">
+            <div class="mimg">
+                <img alt="washingmachine4"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/h/l/x/-original-imagq68cjvcaaxk4.jpeg?q=70"
+                    style="width: 60%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Compact Washing Machine (5 kg, Portable)</div>
+                <br>
+                <ul>
+                    <li>5 kg Capacity</li>
+                    <li>Portable Design</li>
+                    <li>5 Wash Programs</li>
+                    <li>Ideal for Small Spaces</li>
+                    <li>Lightweight and Easy to Move</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(10)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <header>
+        <p>Watches</p>
+    </header>
+
+
+    <!-- Product Section -->
+    <div class="mobcat" id="watch" data-name="Apple watch series">
+        <div class="mob" id="apWa">
+            <div class="mimg">
+                <img alt="watch1"
+                    src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">Apple Watch Series 8 <br> ₹41,900</div>
+                <br>
+                <ul>
+                    <li>GPS + Cellular</li>
+                    <li>Always-On Retina Display</li>
+                    <li>Heart Rate Monitor</li>
+                    <li>Water Resistant up to 50m</li>
+                    <li>Fitness Tracking Features</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(11)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="galaxy watch">
+            <div class="mimg">
+                <img alt="watch2" src="https://tse2.mm.bing.net/th?id=OIP.quq4WzDpXPh7XwD0qAEHQAHaIx&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Samsung Galaxy Watch 5 <br> ₹29,999</div>
+                <br>
+                <ul>
+                    <li>GPS and LTE Options</li>
+                    <li>Sleep Tracking</li>
+                    <li>Body Composition Measurement</li>
+                    <li>Water Resistant</li>
+                    <li>Long Battery Life</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(12)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mob" data-name="fitbit versa watch">
+            <div class="mimg">
+                <img alt="watch3" src="https://tse2.mm.bing.net/th?id=OIP.mYfJhc5T-9_HFwdli7IMqQHaHt&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Fitbit Versa 4 <br> ₹20,999</div>
+                <br>
+                <ul>
+                    <li>24/7 Heart Rate Monitoring</li>
+                    <li>Built-in GPS</li>
+                    <li>Sleep Tracking and Insights</li>
+                    <li>Voice Assistant Support</li>
+                    <li>Battery Life up to 6 days</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(13)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="garmin venu watch">
+            <div class="mimg">
+                <img alt="watch4" src="https://tse3.mm.bing.net/th?id=OIP.E0YIHtXs3OJmE5R_A6PXJQHaHa&pid=Api&P=0&h=180">
+            </div>
+            <div class="mdet">
+                <div class="mname">Garmin Venu Sq <br> ₹24,990</div>
+                <br>
+                <ul>
+                    <li>Built-in GPS</li>
+                    <li>Health Monitoring Features</li>
+                    <li>Music Storage and Playback</li>
+                    <li>Smart Notifications</li>
+                    <li>Battery Life up to 6 days</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(14)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="fossil gen 5 smart watch">
+            <div class="mimg">
+                <img alt="watch5" src="https://tse1.mm.bing.net/th?id=OIP.w-QKgX7-rx-AvTcsQurpXQHaHa&pid=Api&P=0&h=180">
+            </div>
+            <div class="mdet">
+                <div class="mname">Fossil Gen 5 Smartwatch <br> ₹21,995</div>
+                <br>
+                <ul>
+                    <li>Wear OS by Google</li>
+                    <li>Heart Rate Tracking</li>
+                    <li>Built-in GPS</li>
+                    <li>Customizable Watch Faces</li>
+                    <li>Swimproof Design</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(15)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="Amazfit GTS 2 watch">
+            <div class="mimg">
+                <img alt="watch6" src="https://tse2.mm.bing.net/th?id=OIP.mYfJhc5T-9_HFwdli7IMqQHaHt&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Amazfit GTS 2 <br> ₹13,999</div>
+                <br>
+                <ul>
+                    <li>1.65" AMOLED Display</li>
+                    <li>Health Monitoring Features</li>
+                    <li>Built-in GPS</li>
+                    <li>24/7 Heart Rate Monitor</li>
+                    <li>Battery Life up to 14 days</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(16)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <p>Refrigerator</p>
+    </header>
+
+
+    <!-- Product Section -->
+    <div class="mobcat" id="fridge" data-name="Samsung Double Door refrigerator fridge">
+        <div class="mob">
+            <div class="mimg">
+                <img alt="fridge1"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/p/q/m/-original-imahyjqgjemkx98g.jpeg?q=70"
+                    style="width: 55%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Samsung 253L Double Door Refrigerator <br> ₹25,990</div>
+                <br>
+                <ul>
+                    <li>Frost Free, 2 Star Rating</li>
+                    <li>Digital Inverter Technology</li>
+                    <li>Stabilizer Free Operation</li>
+                    <li>Cool Pack Technology</li>
+                    <li>Ice Max Compartment</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(17)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="LG double door fridge refrigerator"> 
+            <div class="mimg">
+                <img alt="fridge2"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/s/f/g/-original-imagzzzbpjgszrz4.jpeg?q=70"
+                    style="width: 55%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">LG 260L Double Door Refrigerator <br> ₹29,490</div>
+                <br>
+                <ul>
+                    <li>Frost Free, 3 Star Rating</li>
+                    <li>Smart Inverter Compressor</li>
+                    <li>Moist Balance Crisper</li>
+                    <li>Multi Air Flow Technology</li>
+                    <li>Energy Saving Features</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(18)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobcat">
+        <div class="mob" data-name="refrigerator fridge samsung">
+            <div class="mimg">
+                <img alt="fridge1"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/p/q/m/-original-imahyjqgjemkx98g.jpeg?q=70"
+                    style="width: 55%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Samsung 253L Double Door Refrigerator <br> ₹25,990</div>
+                <br>
+                <ul>
+                    <li>Frost Free, 2 Star Rating</li>
+                    <li>Digital Inverter Technology</li>
+                    <li>Stabilizer Free Operation</li>
+                    <li>Cool Pack Technology</li>
+                    <li>Ice Max Compartment</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(19)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="refrigerator lg fridge" id="lgfridge">
+            <div class="mimg">
+                <img alt="fridge2"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/s/f/g/-original-imagzzzbpjgszrz4.jpeg?q=70"
+                    style="width: 55%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">LG 260L Double Door Refrigerator <br> ₹29,490</div>
+                <br>
+                <ul>
+                    <li>Frost Free, 3 Star Rating</li>
+                    <li>Smart Inverter Compressor</li>
+                    <li>Moist Balance Crisper</li>
+                    <li>Multi Air Flow Technology</li>
+                    <li>Energy Saving Features</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(20)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <p>Televison</p>
+    </header>
+
+
+
+    <!-- Product Section -->
+    <div class="mobcat" id="tv">
+        <div class="mob" data-name="smart curved tv">
+            <div class="mimg">
+                <img alt="television7"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/j/n/t/-original-imah5c5ze7kzgbcr.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Smart Curved TV (55 inch)<br> ₹50,200</div>
+                <br>
+                <ul>
+                    <li>4K Curved Display</li>
+                    <li>Smart Features with App Store</li>
+                    <li>Enhanced Sound Quality</li>
+                    <li>Immersive Viewing Experience</li>
+                    <li>Multiple Connectivity Options</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(21)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="Smart hd tv">
+            <div class="mimg">
+                <img alt="television5"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/i/a/s/-original-imah2uzafqztmtcm.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Smart HD Ready TV (32 inch)<br> ₹44,444</div>
+                <br>
+                <ul>
+                    <li>HD Ready Resolution</li>
+                    <li>Smart Features with Wi-Fi Connectivity</li>
+                    <li>Built-in Apps</li>
+                    <li>Compact Size for Small Spaces</li>
+                    <li>Multiple Input Options</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(22)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="smart led tv">
+            <div class="mimg">
+                <img alt="television1"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/5/c/q/-original-imah2uzbadwy7rhe.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Smart LED TV (50 inch) <br> ₹15,990</div>
+                <br>
+                <ul>
+                    <li>4K Ultra HD Resolution</li>
+                    <li>Smart TV with Built-in Apps</li>
+                    <li>HDR Support</li>
+                    <li>Voice Control Enabled</li>
+                    <li>2 HDMI and 2 USB Ports</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(23)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="oled tv">
+            <div class="mimg">
+                <img alt="television2"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/p/i/8/-original-imahfu6wtsgdpws9.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">OLED TV (55 inch) <br> ₹55,000</div>
+                <br>
+                <ul>
+                    <li>4K Resolution</li>
+                    <li>Perfect Black and Vivid Colors</li>
+                    <li>Ultra Slim Design</li>
+                    <li>Self-Lit Pixels</li>
+                    <li>Dolby Vision Support</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(24)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="qled tv" id="tvvv">
+            <div class="mimg">
+                <img alt="television3"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/9/w/t/-original-imah4kwzh9hhtzzz.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">QLED TV (65 inch)<br> ₹99,999</div>
+                <br>
+                <ul>
+                    <li>4K Quantum Dot Technology</li>
+                    <li>Wide Viewing Angles</li>
+                    <li>High Brightness Levels</li>
+                    <li>Smart Features with Voice Assistant</li>
+                    <li>Multiple HDMI and USB Inputs</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(25)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="4k hd tv">
+            <div class="mimg">
+                <img alt="television4"
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/p/k/n/-original-imah2uzbscfxgwfj.jpeg?q=70"
+                    style="height: 60%; width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">4K Ultra HD TV (75 inch)<br> ₹35,500</div>
+                <br>
+                <ul>
+                    <li>4K Ultra HD Resolution</li>
+                    <li>Smart TV Features</li>
+                    <li>HDR and Dolby Vision Support</li>
+                    <li>High Refresh Rate</li>
+                    <li>Multiple Connectivity Options</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(26)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <p>HEAD PHONES</p>
+    </header>
+
+    <div class="mobcat" id="headphone" data-name="headphone sony">
+        <div class="mob">
+            <div class="mimg">
+                <img alt="headphone1"
+                    src="https://tse3.mm.bing.net/th?id=OIP.vDwS90k6VPr9UaGjYfWkRgHaHa&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Sony WH-1000XM4 Wireless Headphones <br> ₹29,990</div>
+                <br>
+                <ul>
+                    <li>Noise Cancelling Technology</li>
+                    <li>30-Hour Battery Life</li>
+                    <li>Touch Sensor Controls</li>
+                    <li>Voice Assistant Compatible</li>
+                    <li>Bluetooth 5.0</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(27)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name="headphone bose">
+            <div class="mimg">
+                <img alt="headphone2"
+                    src="https://www.bhphotovideo.com/images/images2500x2500/beats_by_dr_dre_mhdm2am_a_studio_wireless_over_ear_headphones_gold_1098356.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">Bose QuietComfort 35 II <br> ₹29,500</div>
+                <br>
+                <ul>
+                    <li>Active Noise Cancellation</li>
+                    <li>20-Hour Battery Life</li>
+                    <li>Alexa and Google Assistant Built-In</li>
+                    <li>Lightweight and Comfortable</li>
+                    <li>Bluetooth and NFC Pairing</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(28)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobcat">
+        <div class="mob" data-name="headphone airpods ">
+            <div class="mimg">
+                <img alt="headphone3"
+                    src="http://www.bhphotovideo.com/images/images2500x2500/skullcandy_s6hbgy_374_hesh_2_bluetooth_headphones_1085703.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">Apple AirPods Pro <br> ₹24,900</div>
+                <br>
+                <ul>
+                    <li>Active Noise Cancellation</li>
+                    <li>Transparency Mode</li>
+                    <li>30-Hour Battery Life with Case</li>
+                    <li>Customizable Fit with Silicone Tips</li>
+                    <li>Spatial Audio Support</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(29)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="mob" data-name="jabra headphones">
+            <div class="mimg">
+                <img alt="headphone4"
+                    src="https://tse3.mm.bing.net/th?id=OIP.VmGumCiGengPdK6OCFme5QHaHa&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Jabra Elite 85h Wireless Headphones <br> ₹22,999</div>
+                <br>
+                <ul>
+                    <li>Smart Active Noise Cancellation</li>
+                    <li>36-Hour Battery Life</li>
+                    <li>Weather-Resistant Design</li>
+                    <li>Voice Assistant Compatible</li>
+                    <li>Fast Charging</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(30)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobcat">
+        <div class="mob" data-name=" hd headphones headphone">            >
+            <div class="mimg">
+                <img alt="headphone5"
+                    src="https://tse4.mm.bing.net/th?id=OIP.Np5Jh_TIExoTCnjSY5CofQHaKM&pid=Api&P=0&h=180"
+                    style="width: 80%;">
+            </div>
+            <div class="mdet">
+                <div class="mname">Sennheiser HD 450BT <br> ₹15,990</div>
+                <br>
+                <ul>
+
+                    <li>30-Hour Battery Life</li>
+                    <li>Voice Assistant Compatible</li>
+                    <li>Bluetooth 5.0</li>
+                    <li>Customizable Sound with App</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(31)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" data-name=" Anker headphone">
+            >
+            <div class="mimg">
+                <img alt="headphone6"
+                    src="https://www.bhphotovideo.com/images/images2000x2000/Sennheiser_HD598_HD_598_Open_Back_Around_Ear_751989.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">Anker Soundcore Life Q20 <br> ₹8,999</div>
+                <br>
+                <ul>
+                    <li>Hybrid Active Noise Cancellation</li>
+                    <li>40-Hour Battery Life</li>
+                    <li>Hi-Res Audio</li>
+                    <li>Comfortable Ear Cushions</li>
+                    <li>Foldable Design</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(32)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobcat">
+        <div class="mob" data-name=" beats headphone">
+            <div class="mimg">
+                <img alt="headphone7"
+                    src="http://www.bhphotovideo.com/images/images2500x2500/skullcandy_s6hbgy_374_hesh_2_bluetooth_headphones_1085703.jpg">
+            </div>
+            <div class="mdet">
+                <div class="mname">Beats Studio3 Wireless <br> ₹24,999</div>
+                <br>
+                <ul>
+                    <li>Adaptive Noise Cancelling</li>
+                    <li>22-Hour Battery Life with ANC</li>
+                    <li>Fast Fuel Charging</li>
+                    <li>Apple W1 Chip for Seamless Pairing</li>
+                    <li>Custom Acoustic Experience</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(33)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob" id="headphone" data-name="headphone 2">
+            <div class="mimg">
+                <img alt="headphone8"
+                    src="https://i5.walmartimages.com/asr/40574581-c031-46c2-b658-9852a105d4db.f85a635c47c0f4c690846cb146d4bc26.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff">
+            </div>
+            <div class="mdet">
+                <div class="mname">Beyerdynamic DT 770 PRO <br> ₹12,000</div>
+                <br>
+                <ul>
+                    <li>Closed Back Design</li>
+                    <li>Excellent Sound Isolation</li>
+                    <li>Soft, Comfortable Ear Pads</li>
+                    <li>Durable Build Quality</li>
+                    <li>Ideal for Studio Use</li>
+                </ul>
+                <div class="dbtn">
+                    <button class="btn" onclick="addToCart(34)">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn1">
+            <button class="close">CLOSE</button>
+            <button class="checkOut" onclick="location.href='checkOut.html'" style="color: white;">CheckOut</button>
+        </div>
+    </div>
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="main.html" class="text-white">Home</a></li>
+                        <li><a href="main.html#categories" class="text-white">Shop by Category</a></li>
+
+                        <li><a href="#phone" class="text-white">Mobile Phones</a></li>
+                        <li><a href="#headphone" class="text-white">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="main.html#faq" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white"> </a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+
+                    <br><br>
+                    <p>+91 9745327860</p>
+                    <p>electromart@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <h5>We Accept</h5>
+                    <p>Cash on delivery &#x1F4B5</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center py-3 mt-4" style="background-color: #111;">
+            <p class="mb-0">© 2024 ElectroMart Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        mobileMenu.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+        const urlParams = new URLSearchParams(window.location.search);
+           const searchQuery = urlParams.get('search') ? urlParams.get('search').toLowerCase() : '';
+
+if (searchQuery) {
+    const products = document.querySelectorAll('.mobcat'); 
+    
+    products.forEach(product => {
+        const productName = product.dataset.name.toLowerCase(); 
+        if (!productName.includes(searchQuery)) {
+            product.style.display = 'none'; 
+        } else {
+            product.style.display = 'flex'; 
+        }
+    });
+}
+
+    </script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
