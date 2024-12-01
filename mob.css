@@ -22,7 +22,6 @@ header {
     text-align: center;
 }
 
-/* Category Section */
 .categories {
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +56,6 @@ header {
     text-decoration: none;
 }
 
-/* Product Section */
 .mobcat {
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +65,7 @@ header {
 }
 
 .mob {
-    width: 48%; /* 48% to leave some space for margins */
+    width: 48%; 
     margin-bottom: 20px;
     background-color: white;
     display: flex;
@@ -120,17 +118,14 @@ header {
     font-size: 0.8em;
 }
 
-/* Media Queries for Responsive Design */
-
-/* For screens below 768px */
 @media (max-width: 768px) {
     .mob {
-        width: 100%; /* Full width for single product per row */
-        flex-direction: column; /* Stack image and details vertically */
+        width: 100%; 
+        flex-direction: column; 
     }
 
     .mimg, .mdet {
-        width: 100%; /* Full width for image and details */
+        width: 100%;
     }
 
     .mname {
@@ -143,29 +138,29 @@ header {
 }
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to start */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
     .search-bar {
-        margin: 10px 0; /* Add margin for better spacing */
+        margin: 10px 0; 
     }
     .categories, .products {
-        flex-direction: column; /* Stack categories/products vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
     .category, .pod {
-        flex: 1 1 90%; /* Adjust flex basis for smaller screens */
+        flex: 1 1 90%; 
     }
 }
 
 @media (max-width: 480px) {
     .main-banner {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
     .bounce {
-        font-size: 24px; /* Smaller text size */
+        font-size: 24px; 
     }
     .header h1 {
-        font-size: 20px; /* Adjust header size */
+        font-size: 20px; 
     }
 }
